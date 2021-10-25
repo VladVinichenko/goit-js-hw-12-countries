@@ -9,6 +9,7 @@ import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/Material.css';
 import { defaults } from '@pnotify/core';
 defaults.styling = 'material';
+defaults.delay = 1000;
 const fetchService = new FetchService();
 
 refs.input.addEventListener('input', _.debounce(searchCountry, 500));
