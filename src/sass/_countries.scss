@@ -1,3 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-colour);
+  font-size: var(--primary-font-size);
+  letter-spacing: 0.03em;
+}
+
+address {
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
 .body-style {
   background-color: #1c1d1f;
   color: white;
@@ -34,11 +74,81 @@
   border: 1px solid rgb(145, 60, 140);
   color: rgb(194, 194, 194);
   transition: all 250ms;
+  margin-bottom: 30px;
   &:focus,
   &:hover {
     outline: none;
     color: rgb(255, 255, 255);
     box-shadow: 0 0 15px rgb(89, 19, 136);
     border: 1px solid rgb(185, 78, 180);
+  }
+}
+
+.countries-list {
+  width: 100%;
+}
+
+.countries-list__box {
+  display: flex;
+  // width: 100%;
+}
+
+.countries-list__first-box {
+  flex-grow: 1;
+  padding-top: 10px;
+  // background-color: rgb(40, 59, 59);
+}
+
+.countries-list__second-box {
+  // flex-grow: 1;
+  // background-color: rgb(39, 9, 9);
+}
+
+.countries-list__flag {
+  width: 30vw;
+  // height: 300px;
+  // background-color: blueviolet;
+  // border: 1px solid red;
+}
+
+.countries-list__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.countries-list__about-item {
+  // display: flex;
+  margin-bottom: 15px;
+}
+
+.countries-list__about-title {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.countries-list__about-text {
+  display: inline-block;
+}
+
+.countries-list__about-langauges {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.countries-list-names {
+  font-size: 16px;
+  // display: inline-block;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: rgb(27, 18, 25);
+  padding: 8px;
+  margin-bottom: 10px;
+  transition: all 250ms;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 10px rgb(148, 1, 141);
+    text-shadow: 0 0 3px white;
+    background-color: rgb(34, 13, 29);
   }
 }

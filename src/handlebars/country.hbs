@@ -1,0 +1,33 @@
+{{#each this}}
+  <li class='countries-list__item'>
+    <h2 class='countries-list__title'>{{name}}</h2>
+    <div class='countries-list__box'>
+      <div class='countries-list__first-box'>
+        <ul class='countries-list__about-list list'>
+          <li class='countries-list__about-item'>
+            <h3 class='countries-list__about-title'>Capital:</h3>
+            <p class='countries-list__about-text'>{{capital}}</p>
+          </li>
+          <li class='countries-list__about-item'>
+            <h3 class='countries-list__about-title'>Population:</h3>
+            <p class='countries-list__about-text'>{{population}}</p>
+          </li>
+          <li class='countries-list__about-item'>
+            <h3 class='countries-list__about-title'>Langauges:</h3>
+            <ul class='countries-list__about-langauges list'>
+              {{#each languages}}
+                <li class='countries-list__about-langauge'>{{name}}</li>
+              {{/each}}
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='countries-list__second-box'>
+        {{! <svg class='countries-list__flag'>
+        <use href='https://flagcdn.com/tw.svg'></use>
+      </svg> }}
+        <img class='countries-list__flag' src={{flags.png}} alt={{name.common}} />
+      </div>
+    </div>
+  </li>
+{{/each}}
